@@ -1,2 +1,2 @@
 # mastering-go
-Resources and coding to learn Go
+Resources and code to learn Go
