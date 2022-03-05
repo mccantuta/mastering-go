@@ -2,3 +2,5 @@
 
 ## go.dev Website
 * Installing Go
+* Tutorial: Getting started
+
