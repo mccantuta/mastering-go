@@ -31,6 +31,5 @@ func forInfinite(i int) {
 		if i > 5 {
 			break
 		}
-
 	}
 }
