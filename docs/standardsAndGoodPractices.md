@@ -14,4 +14,7 @@ The use of upper-case names for export provides the hook to discriminate the fie
 A setter function, if needed, will likely be called SetOwner
 
 ### Loops
-There is no `do` or `while` loop, only a slightly generalized `for` and `switch`. 
+There is no `do` or `while` loop, only a slightly generalized `for` and `switch`.
+
+### Switch
+There is no automatic fall through, but cases can be presented in comma-parated lists
