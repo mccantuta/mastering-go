@@ -14,4 +14,4 @@
 * A Tour of Go
 
 ### Using and understanding Go
-* Effective Go <- EN PROCESO - EN Append
+* Effective Go <- EN PROCESO - Para empezar Initialization

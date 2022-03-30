@@ -7,6 +7,23 @@
 ## Built-in functions
 Functions which needs support from compiler, e.g. append function for slices
 
+### Variadic function
+The function that called with the varying number of arguments. The user is allowed to pass zero or
+more arguments in the variadic function. e.g. `fmt.Printf`
+You can pass a slice directly to a variadic function if you unpack it with the `...`
+e.g.
+```
+func Sum(nums ...int) int {
+    res := 0
+    for _, n := range nums {
+        res += n
+    }
+    return res
+}
+primes := []int{2, 3, 5, 7}
+fmt.Println(Sum(primes...))
+```
+
 ## Naming
 The convention in Go is to use MixedCaps or mixedCaps rather than underscores to write multiword names.
 
