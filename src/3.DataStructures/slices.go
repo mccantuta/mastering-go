@@ -3,7 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	initalizeSlice()
+	//initalizeSlice()
+	//basicFunction()
+	relatedSlice()
 }
 
 func initializeSlice() {
@@ -17,6 +19,12 @@ func initializeSlice() {
 	//When the length argument is smaller than capacity, the last elements will be `null`
 	var slice4 = make([]int, 2, 4)
 	//Now it's [0 0 nil nil]
+	fmt.Println(slice0)
+	fmt.Println(slice1)
+	fmt.Println(slice2)
+	fmt.Println(slice3)
+	fmt.Println(slice4)
+
 }
 
 func basicFunction() {
@@ -28,4 +36,20 @@ func basicFunction() {
 	for i := 0; i < 3; i++ {
 		fmt.Println(mySlice[i])
 	}
+}
+
+func relatedSlice() {
+	slice1 := []int{1, 2}
+	slice2 := append(slice1, 3)
+	// Due to slice's capacity was 2, a new slice was created,
+	//the append method return a reference value
+	slice1[0] = 100
+	fmt.Println(slice1)
+	fmt.Println(slice2)
+	slice3 := append(slice2, 4)
+	// Due to slice's capacity is 4, the underline array remains,
+	// the append method return a copy value
+	slice2[0] = 200
+	fmt.Println(slice2)
+	fmt.Println(slice3)
 }
