@@ -4,6 +4,9 @@
 * Is possible to have multiple Go versions installed on the same machine?
  Yes, https://go.dev/doc/manage-install
 
+## Built-in functions
+Functions which needs support from compiler, e.g. append function for slices
+
 ## Naming
 The convention in Go is to use MixedCaps or mixedCaps rather than underscores to write multiword names.
 

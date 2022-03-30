@@ -53,3 +53,7 @@ func relatedSlice() {
 	fmt.Println(slice2)
 	fmt.Println(slice3)
 }
+
+func appendFunction() {
+
+}
