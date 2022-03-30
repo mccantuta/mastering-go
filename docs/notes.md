@@ -54,5 +54,5 @@ on them.
 If you pass a map to a function that changes the contents of the map, the changes will be visible
 in the caller.
 
-An attempt to fetch a map value with a key that is not present in the map will return the zero value
-for the type of the entries in the map.
+An attempt to fetch a map value with a key that is not present in the map will return the zero 
+value for the type of the entries in the map.

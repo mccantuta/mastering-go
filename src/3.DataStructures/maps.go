@@ -4,7 +4,8 @@ import "fmt"
 
 func main() {
 	//keyNotFound()
-	commaOk()
+	//commaOk()
+	safeDelete()
 }
 
 func initialization() {
@@ -38,4 +39,13 @@ func commaOk() {
 	v, ok := myMap[3]
 	fmt.Println(v)
 	fmt.Println(ok)
+}
+
+func safeDelete() {
+	var myMap = map[int]string{
+		1: "uno",
+		2: "dos",
+	}
+	delete(myMap, 5) //Key does not exist but operation does not throws an error
+	fmt.Println(len(myMap))
 }

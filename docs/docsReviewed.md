@@ -14,4 +14,4 @@
 * A Tour of Go
 
 ### Using and understanding Go
-* Effective Go <- EN PROCESO - EN SLICES
+* Effective Go <- EN PROCESO - EN Printing
