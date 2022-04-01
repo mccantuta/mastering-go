@@ -25,7 +25,21 @@ fmt.Println(Sum(primes...))
 ```
 
 ## Naming
-The convention in Go is to use MixedCaps or mixedCaps rather than underscores to write multiword names.
+The convention in Go is to use MixedCaps or mixedCaps rather than underscores to write multiword 
+names.
+
+## Initialization
+
+### Constants
+Constants are created at compile time, even when defined as locals in functions and can only be numbers, 
+characters (runes), strings or booleans. Because of the compile-time restriction, the expressions
+that define them must be constant expressions, evaluatable by the compiler.
+
+### Init method
+Each source file can define its own niliadic `init` function. Actually each file can have multiple
+`init` functions. Init is called after all the variable declarations in the package have evaluated 
+their initializers and those are evaluated only after all the imported packages have been 
+initialized
 
 ### Packages
 Lower case, single-word names, no underscores, no mixedCaps. Short, concise and evocative.

@@ -17,6 +17,8 @@ func getParameterType(parameter interface{}) {
 		fmt.Printf("Integer: %d", t)
 	case string:
 		fmt.Printf("String: %v", t)
+	case Test:
+		fmt.Printf("Type Test: %v", t)
 	default:
 		fmt.Printf("Unexpected type: %T", t)
 	}
