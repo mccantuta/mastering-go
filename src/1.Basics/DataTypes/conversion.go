@@ -11,6 +11,8 @@ func convertToString(value interface{}) {
 	if !ok {
 		fmt.Println("Value is not a String")
 	}
+	// Other alternative is to use a one-line sentence like
+	// if value, ok := value.(string); !ok {}
 
 	fmt.Println(stringValue)
 }

@@ -90,3 +90,22 @@ in the caller.
 
 An attempt to fetch a map value with a key that is not present in the map will return the zero 
 value for the type of the entries in the map.
+
+## Conversions
+To convert to another data type use notation `value.(typeName)`
+
+```
+str, ok := value.(string)
+if ok {
+    fmt.Printf("string value is: %q\n", str)
+} else {
+    fmt.Printf("value is not a string\n")
+}
+```
+```
+if str, ok := value.(string); ok {
+    return str
+} else if str, ok := value.(Stringer); ok {
+    return str.String()
+}
+```

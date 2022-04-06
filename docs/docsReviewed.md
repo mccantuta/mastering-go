@@ -14,4 +14,4 @@
 * A Tour of Go
 
 ### Using and understanding Go
-* Effective Go <- EN PROCESO - Para empezar Interfaces and methods
+* Effective Go <- EN PROCESO - Interface checks
