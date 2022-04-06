@@ -5,7 +5,8 @@ import "fmt"
 func main() {
 	//keyNotFound()
 	//commaOk()
-	safeDelete()
+	//safeDelete()
+	addElementsToNil()
 }
 
 func initialization() {
@@ -48,4 +49,11 @@ func safeDelete() {
 	}
 	delete(myMap, 5) //Key does not exist but operation does not throws an error
 	fmt.Println(len(myMap))
+}
+
+func addElementsToNil() {
+	//To add elements
+	var noSense map[string]int
+	fmt.Println(noSense)
+	noSense["first"] = 1
 }
