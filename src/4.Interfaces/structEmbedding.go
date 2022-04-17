@@ -7,6 +7,11 @@ type Address struct {
 	number int
 }
 
+type Person struct {
+	name string
+	Address
+}
+
 func (a Address) fullAddress() {
 	fmt.Println(a.street, a.number)
 }
@@ -14,4 +19,6 @@ func (a Address) fullAddress() {
 func main() {
 	a := Address{"Street1", 123}
 	a.fullAddress()
+	p := Person{"Name", a}
+	p.fullAddress()
 }
