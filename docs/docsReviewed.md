@@ -14,4 +14,4 @@
 * A Tour of Go
 
 ### Using and understanding Go
-* Effective Go <- EN PROCESO - Interface checks
+* Effective Go <- EN PROCESO - Embedding
